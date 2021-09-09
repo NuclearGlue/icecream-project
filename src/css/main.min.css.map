@@ -1,0 +1,19 @@
+{
+    "version": 3,
+    "mappings": "AEAA,AAAA,CAAC,AAAC,CACA,MAAM,CAAE,CAAC,CACV,AACD,AAAA,EAAE,CACF,EAAE,CACF,EAAE,CACF,EAAE,CACF,EAAE,CACF,EAAE,AAAC,CACD,MAAM,CAAE,CAAC,CACT,OAAO,CAAE,CAAC,CACX,AACD,AAAA,GAAG,AAAC,CACF,OAAO,CAAE,KAAK,CACd,KAAK,CAAE,IAAI,CACX,MAAM,CAAE,IAAI,CACb,AACD,AAAA,EAAE,AAAC,CACD,UAAU,CAAE,IAAI,CAChB,UAAU,CAAE,CAAC,CACb,aAAa,CAAE,CAAC,CAChB,YAAY,CAAE,CAAC,CAChB,AAED,AAAA,UAAU,AAAC,CACT,OAAO,CAAE,MAAM,CAOhB,AANC,MAAM,EAAE,SAAS,EAAE,KAAK,EAF1B,AAAA,UAAU,AAAC,CAGP,OAAO,CAAE,MAAM,CAKlB,CAHC,MAAM,EAAE,SAAS,EAAE,MAAM,EAL3B,AAAA,UAAU,AAAC,CAMP,OAAO,CAAE,OAAO,CAEnB,CACD,AAAA,sBAAsB,AAAC,CACrB,OAAO,CAAE,CAAC,CACX,AAED,AAAA,eAAe,AAAC,CACd,QAAQ,CAAE,QAAQ,CAClB,IAAI,CAAE,aAAa,CACnB,KAAK,CAAE,GAAG,CACV,MAAM,CAAE,GAAG,CACX,MAAM,CAAE,IAAI,CACb",
+    "sources": [
+        "../sass/main.scss",
+        "../sass/_variables.scss",
+        "../sass/_general.scss",
+        "../sass/_hero-header.scss",
+        "../sass/_about.scss",
+        "../sass/_advantages.scss",
+        "../sass/_products.scss",
+        "../sass/_gallery.scss",
+        "../sass/_customer-reviews.scss",
+        "../sass/_contacts.scss",
+        "../sass/_footer.scss"
+    ],
+    "names": [],
+    "file": "main.min.css"
+}

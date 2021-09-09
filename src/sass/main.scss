@@ -3,7 +3,9 @@
  * Все паршалы подключаются сюда.
  */
 
-// Стили для файла с примером HTML-фрагмента
+// Стили для файлов
+@import './variables';
+@import './general';
 @import './hero-header';
 @import './about';
 @import './advantages';
