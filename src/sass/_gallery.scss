@@ -1,0 +1,9 @@
+.section--bg-gallery {
+  background-image: linear-gradient(
+    to bottom,
+    $background-accent 0%,
+    $background-accent 40%,
+    $accent-text-color 40%,
+    $accent-text-color 100%
+  );
+}
