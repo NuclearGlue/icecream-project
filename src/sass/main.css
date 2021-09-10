@@ -1,0 +1,128 @@
+@charset "UTF-8";
+/*
+ * Главный файл стилей.
+ * Все паршалы подключаются сюда.
+ */
+p {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+ul {
+  list-style: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+.container {
+  padding: 0 20px;
+}
+
+@media (min-width: 768px) {
+  .container {
+    padding: 0 36px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    padding: 0 115px;
+  }
+}
+
+.container--no-padding {
+  padding: 0;
+}
+
+.visualy-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+.header {
+  height: 502px;
+  background-color: #ffb8ca;
+}
+
+@media (min-width: 480px) {
+  .header {
+    width: 480px;
+  }
+}
+
+@media (min-width: 768px) {
+  .header {
+    width: 768px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .header {
+    width: 1280;
+  }
+}
+
+.header__button {
+  width: 209px;
+  height: 44px;
+  border-radius: 22px;
+  border-color: #ffb8ca;
+  color: #d41443;
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.312;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.menu-toggle {
+  background-color: #ffb8ca;
+  border-color: #ffb8ca;
+  position: absolute;
+  top: 16px;
+  right: 16px;
+}
+
+.header__container {
+  padding: 34px 37px;
+}
+
+@media (min-width: 320px) and (max-width: 1279px) {
+  .nav__site {
+    display: none;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 779px) {
+  .header__button {
+    display: none;
+  }
+}
+/*# sourceMappingURL=main.css.map */
