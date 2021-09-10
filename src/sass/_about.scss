@@ -1,0 +1,18 @@
+.about {
+  outline: 3px solid red;
+}
+.about__label {
+  font-family: $secondary-font;
+  color: $light-accent-color;
+  font-size: 18px;
+  line-height: 1.16;
+  text-transform: uppercase;
+}
+.about__title {
+  font-family: $secondary-font;
+  color: $dark-accent-color;
+  font-size: 34px;
+  line-height: 1.14;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
