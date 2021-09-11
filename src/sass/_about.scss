@@ -1,4 +1,14 @@
 .about {
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+  }
+}
+
+.about {
   padding-top: 60px;
   padding-bottom: 0;
   margin-left: auto;
@@ -7,19 +17,35 @@
   background-color: $background-accent;
   text-align: center;
 
-  background-image: url(../images/about/about-bcg-mob@1x.png);
-  background-position: bottom right;
-  background-repeat: no-repeat;
-  background-size: contain;
-
-  @media screen and (min-device-pixel-ratio: 2),
-    screen and (min-resolution: 192dpi),
-    screen and (min-resolution: 2dppx) {
-    background-image: url(../images/about/about-bcg-mob@2x.png);
+  @media screen and (max-width: 767px) {
+    background-image: url(../images/about/about-bcg-mob@1x.png);
     background-position: bottom right;
     background-repeat: no-repeat;
-
     background-size: contain;
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url(../images/about/about-bcg-mob@2x.png);
+      background-position: bottom right;
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    background-image: url(../images/about/about-bcg-desk@1x.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url(../images/about/about-bcg-desk@2x.png);
+      background-repeat: no-repeat;
+
+      background-size: contain;
+    }
   }
 }
 .about__wrapper {
@@ -53,11 +79,9 @@
 }
 
 .about__image {
-}
-
-.about__box {
   @media screen and (min-width: 768px) {
-    display: flex;
+    width: 340px;
+    height: 339px;
   }
 }
 
@@ -88,6 +112,12 @@
   font-size: 12px;
   line-height: 1.58;
   color: $dark-text-color;
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: 1.78;
+    letter-spacing: 0.04em;
+  }
 }
 
 .about__text--lightcolor {
@@ -112,5 +142,18 @@
   border-color: transparent;
   &:hover {
     background-color: $light-button-hover;
+  }
+}
+
+.about__full-box {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.about__box {
+  @media screen and (min-width: 768px) {
+    margin-left: 20px;
   }
 }
