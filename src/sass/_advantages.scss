@@ -3,3 +3,62 @@
     display: flex;
   }
 }
+.advantages__item:not(:first-child) {
+  @media (min-width: 768px) {
+    margin-left: 60px;
+  }
+  @media (min-width: 1280px) {
+    margin-left: 30px;
+  }
+}
+
+.advantages__title {
+  font-family: $secondary-font;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 41px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: $dark-accent-color;
+
+  @media (min-width: 768px) {
+    font-size: 48px;
+    line-height: 55px;
+    text-transform: none;
+  }
+
+  @media (min-width: 1280px) {
+    font-size: 58px;
+    line-height: 66px;
+  }
+}
+
+.advantages__first::before {
+  content: '';
+  background-image: url('../images/advantages/icon1.png');
+}
+.advantages__second::before {
+  content: '';
+  background-image: url('../images/advantages/icon2.png');
+}
+.advantages__third::before {
+  content: '';
+  background-image: url('../images/advantages/icon3.png');
+}
+
+.advantages__text {
+  font-family: $main-font;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.7;
+
+  @media (min-width: 768px) {
+    font-size: 14px;
+    line-height: 1.74;
+  }
+  @media (min-width: 1280px) {
+    font-size: 16px;
+    line-height: 1.76;
+    letter-spacing: 0.02em;
+  }
+}
