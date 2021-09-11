@@ -1,0 +1,116 @@
+<section class="section-contacts">
+    <div class="container">
+        <h1 class="contacts__main-title">How you can contact us?</h1>
+        <ul class="contacts">
+            <li class="contacts__item">
+                <p class="contacts__category">CAFE</p>
+                <div class="contacts__block">
+                    <p class="contacts__title">Chicago</p>
+                    <p class="contacts__description">Fusce ut velit laoreet, tempus arcu molestie vulputate</p>
+                </div>
+                <div class="contacts__block">
+                    <ul>
+                        <li class="contacts__hours">
+                        <p class="contacts__title">Monday - Friday</p>
+                        <p class="contacts__description--time">06:00 AM - 10:00 PM</p>
+                        </li>
+                        <li class="contacts__hours">
+                        <p class="contacts__title">Saturday - Sunday</p>
+                        <p class="contacts__description--time">08:00 AM - 16:00 PM</p>
+                        </li>
+                    </ul>
+                </div>
+                <ul class="contacts__block">
+                    <li><a href="tel:+61(0)383766284" class="contacts__link">+61(0) 383 766 284</a></li>
+                    <li><a href="mailto:noreply@envato.com" class="contacts__link">noreply@envato.com</a></li>
+                </ul>
+            </li>
+            <li class="contacts__item">
+                <p class="contacts__category">FOODTRUCK</p>
+                <div class="contacts__block">
+                    <p class="contacts__title">Los Angeles</p>
+                    <p class="contacts__description">Fusce ut velit laoreet, tempus arcu molestie vulputate</p>
+                </div>
+                <div class="contacts__block">
+                    <ul>
+                        <li class="contacts__hours">
+                            <p class="contacts__title">Monday - Friday</p>
+                            <p class="contacts__description--time">06:00 AM - 10:00 PM</p>
+                        </li>
+                        <li class="contacts__hours">
+                            <p class="contacts__title">Saturday - Sunday</p>
+                            <p class="contacts__description--time">08:00 AM - 16:00 PM</p>
+                        </li>
+                    </ul>
+                </div>
+                <ul class="contacts__block">
+                    <li><a href class="contacts__link"="tel:+61(0)383766284">+61(0) 383 766 284</a></li>
+                    <li><a href class="contacts__link"="mailto:noreply@envato.com">noreply@envato.com</a></li>
+                </ul>
+                </li>
+            <li class="contacts__item">
+                <p class="contacts__category">CAFE</p>
+                <div class="contacts__block">
+                    <p class="contacts__title">New York</p>
+                    <p class="contacts__description">Fusce ut velit laoreet, tempus arcu molestie vulputate</p>
+                    </div>
+                    <div class="contacts__block">
+                        <ul>
+                            <li class="contacts__hours">
+                                <p class="contacts__title">Monday - Friday</p>
+                                <p class="contacts__description--time">06:00 AM - 10:00 PM</p>
+                            </li>
+                            <li class="contacts__hours">
+                                <p class="contacts__title">Saturday - Sunday</p>
+                                <p class="contacts__description--time">08:00 AM - 16:00 PM</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <ul class="contacts__block">
+                        <li><a href class="contacts__link"="tel:+61(0)383766284">+61(0) 383 766 284</a></li>
+                        <li><a href class="contacts__link"="mailto:noreply@envato.com">noreply@envato.com</a></li>
+                    </ul>
+                    </li>
+        </ul>
+        <ul class="contacts__button">
+            <li><button class="contacts__button-item" type="button" data-modal-open >Our Locations
+                <svg class="contacts__button-icon">
+                    <use href="./images/images-contacts/icons-contacts.svg#icon-vector-white"></use>
+                </svg>
+            </button>
+            </li>
+            <li><button class="contacts__button-item contacts__button-item--light" type="button">Franchise
+                <svg class="contacts__button-icon">
+                    <use href="./images/images-contacts/icons-contacts.svg#icon-vector-red"></use>
+                </svg>
+            </button>
+        </li>
+        </ul>
+    </div>
+</section>
+
+<div class="backdrop is-hidden" data-modal>
+    <div class="contacts__modal">
+    <button class="contacts__modal-close-button" data-modal-close>
+        <svg class="contacts__modal-close-icon">
+            <use href="./images/images-contacts/icons-contacts.svg#icon-xmark"></use>
+        </svg>
+    </button>
+    <a class="contacts__modal-search-link" href="https://www.google.com/maps">FIND US WITH GOOGLE</a>
+    </div>    
+</div>
+
+<script>
+    const refs = {
+    openModalBtn: document.querySelector('[data-modal-open]'),
+    closeModalBtn: document.querySelector('[data-modal-close]'),
+    modal: document.querySelector('[data-modal]'),
+    };
+
+    refs.openModalBtn.addEventListener('click', toggleModal);
+    refs.closeModalBtn.addEventListener('click', toggleModal);
+
+    function toggleModal() {
+    refs.modal.classList.toggle('is-hidden');
+    }
+</script>
