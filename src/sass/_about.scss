@@ -51,6 +51,14 @@
 .about__wrapper {
   margin-bottom: 26px;
   text-align: center;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 50px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 55px;
+  }
 }
 .about__label {
   margin-bottom: 15px;
@@ -79,6 +87,10 @@
 }
 
 .about__image {
+  @media screen and (max-width: 767px) {
+    width: 280px;
+    height: 279px;
+  }
   @media screen and (min-width: 768px) {
     width: 340px;
     height: 339px;
@@ -87,7 +99,6 @@
 
 .about__list {
   display: flex;
-  // flex-wrap: wrap;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -95,18 +106,22 @@
   margin-top: 46px;
   margin-bottom: 20px;
 }
+
 .about__item {
+  width: 200px;
+  height: auto;
+
   &:first-child {
     margin-bottom: 35px;
   }
   &:last-child {
     margin-top: 24px;
   }
+  @media screen and (min-width: 768px) {
+    width: 340px;
+  }
 }
 .about__text {
-  width: 200px;
-  height: auto;
-
   font-family: $main-font;
   font-weight: 500;
   font-size: 12px;
@@ -148,7 +163,6 @@
 .about__full-box {
   @media screen and (min-width: 768px) {
     display: flex;
-    justify-content: center;
   }
 }
 
