@@ -5,6 +5,7 @@
   background-repeat: no-repeat;
   padding-bottom: 115px;
   background-position: center;
+  background-size: contain;
 
   @media screen and (min-width: 768px) {
     background-image: url(../images/images-contacts/background-contacts.png),
@@ -25,14 +26,13 @@
       );
   }
 }
-
 @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .section-contacts {
     background-image: url(../images/images-contacts/background-contacts@2x.png),
       linear-gradient(to bottom, $background-main 7%, $background-accent 7%, $background-accent 93%);
 
     @media screen and (min-width: 768px) {
-      background-image: url(../images/images-contacts/background-contacts@2x.png),
+      background-image: url(../images/images-contacts/background-contacts.png),
         linear-gradient(
           to bottom,
           $background-main 13%,
@@ -41,7 +41,7 @@
         );
     }
     @media screen and (min-width: 1280px) {
-      background-image: url(../images/images-contacts/background-contacts@2x.png),
+      background-image: url(../images/images-contacts/background-contacts.png),
         linear-gradient(
           to bottom,
           $background-main 15%,
@@ -51,6 +51,7 @@
     }
   }
 }
+
 .contacts {
   @media screen and(min-width:768px) {
     display: flex;
