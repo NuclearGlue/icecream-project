@@ -1,12 +1,42 @@
 .about {
-  outline: 3px solid red;
+  padding-top: 60px;
+  padding-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+  outline: 3px soli red;
+  background-color: $background-accent;
+  text-align: center;
+
+  background-image: url(../images/about/about-bcg-mob@1x.png);
+  background-position: bottom right;
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    background-image: url(../images/about/about-bcg-mob@2x.png);
+    background-position: bottom right;
+    background-repeat: no-repeat;
+
+    background-size: contain;
+  }
+}
+.about__wrapper {
+  margin-bottom: 26px;
+  text-align: center;
 }
 .about__label {
+  margin-bottom: 15px;
   font-family: $secondary-font;
   color: $light-accent-color;
   font-size: 18px;
   line-height: 1.16;
   text-transform: uppercase;
+  @media screen and (min-width: 768px) {
+    font-size: 26px;
+    line-height: 1.15;
+  }
 }
 .about__title {
   font-family: $secondary-font;
@@ -15,4 +45,72 @@
   line-height: 1.14;
   letter-spacing: 0.04em;
   text-transform: uppercase;
+
+  @media screen and (min-width: 768px) {
+    font-size: 48px;
+    line-height: 1.14;
+  }
+}
+
+.about__image {
+}
+
+.about__box {
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+}
+
+.about__list {
+  display: flex;
+  // flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: start;
+  margin-top: 46px;
+  margin-bottom: 20px;
+}
+.about__item {
+  &:first-child {
+    margin-bottom: 35px;
+  }
+  &:last-child {
+    margin-top: 24px;
+  }
+}
+.about__text {
+  width: 200px;
+  height: auto;
+
+  font-family: $main-font;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.58;
+  color: $dark-text-color;
+}
+
+.about__text--lightcolor {
+  color: $light-text-color;
+}
+
+.about__button {
+  justify-content: center;
+  align-items: center;
+
+  background-color: $background-main;
+  color: $dark-button;
+
+  font-family: $main-font;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+
+  width: 176px;
+  height: 44px;
+
+  border-radius: 22px;
+  border-color: transparent;
+  &:hover {
+    background-color: $light-button-hover;
+  }
 }

@@ -1,15 +1,31 @@
 <section class="section">
     <div class="container about">
+        <div class="about__wrapper">
         <p class="about__label">Tradition and love</p>
         <h2 class="about__title">How IT's made</h2>
-        <picture class="about__image">Картинка</picture>
-        <ul class="about__wrapper">
-            <li><p>Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo cursus, faucibus lorem eget, egestas eros.
+        </div>
+        <picture class="about__image">
+            <source srcset=" ./images/about/about-desk@1x.png 1x, ./images/about/about-desk@2x.png 2x" type="image/png"
+                media="(min-width: 1200px)">
+            <source srcset=" ./images/about/about-tab@1x.png  1x, ./images/about/about-tab@1x.png 2x" type="image/png"
+                media="(min-width: 768px)">
+            <source srcset=" ./images/about/about-mob@1x.png  1x, ./images/about/about-mob@1x.png 2x" type="image/png"
+                media="(max-width: 767px)">
+            <img src="./images/about/about-tab@1x.png" alt="Cow, milk and promo" width="340" height="339">
+        </picture>
+        <div class="about__box"> 
+        <ul class="about__list">
+            <li class="about__item"><p class="about__text">Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo cursus, faucibus lorem eget, egestas eros.
             Maecenas eleifend erat at justo fringilla.</p></li>
-            <li><p>Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum. Mauris rhoncus orci in imperdiet placerat.
+           
+            <li class="about__item"><p class="about__text about__text--lightcolor">Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum. Mauris rhoncus orci in imperdiet placerat.
             Vestibulum euismod nisl suscipit ligula volutpat, a feugiat urna maximus. Cras massa nibh, tincidunt.</p></li>
-            <li><p>Aliquam erat volutpat. Aenean accumsan.</p></li>
+            <li class="about__item"><p class="about__text about__text--lightcolor">Aliquam erat volutpat. Aenean accumsan.</p></li>
+          
         </ul>
-        <button>Read more</button>
+        <button class="about__button">Read more</button>
+        </div>
     </div>
+
+   
 </section>
