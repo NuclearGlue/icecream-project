@@ -1,4 +1,7 @@
 .about {
+  @media screen and (min-width: 480px) {
+    width: 480px;
+  }
   @media screen and (min-width: 768px) {
     width: 768px;
   }
