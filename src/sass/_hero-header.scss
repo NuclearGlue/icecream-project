@@ -6,15 +6,14 @@
   overflow-x: hidden;
 }
 
-.hero {
-  position: relative;
-}
-
 .menu {
+  position: absolute;
+  top: 60px;
+  left: 355px;
   display: flex;
   padding: 0;
   margin: 0;
-  list-style: none;
+  z-index: 1;
 }
 
 @media (max-width: 1279px) {
@@ -86,9 +85,8 @@
   width: 250px;
   position: fixed;
   top: 0;
-  left: 34%;
-  margin-left: auto;
-  margin-right: auto;
+  left: 0;
+
   height: 100vh;
   padding: 60px 20px;
   background-color: $mobile-menu-background;
@@ -97,18 +95,15 @@
   overflow-x: hidden;
   filter: drop-shadow(-8px 0px 20px rgba(0, 0, 0, 0.25));
 
-  // position: absolute;
-  // top: 50%;
-  // left: 50%;
   transform: translate(0%, 50%);
 
   flex-direction: column;
-  transform: translateX(105vw);
+  transform: translateX(-109vw);
   transition: transform 250ms ease-in-out;
 }
 
 .menu-container.is-open {
-  transform: translateX(0);
+  transform: translateX(0%);
 }
 
 .menu-container .menu-toggle {
@@ -151,6 +146,12 @@ body {
 @media (min-width: 320px) {
   .header {
     min-width: 320px;
+  }
+}
+
+@media (min-width: 480px) {
+  .header {
+    width: 480px;
   }
 }
 
@@ -214,11 +215,20 @@ body {
 .dark-button {
   background-color: $dark-button;
   color: $background-main;
+  &:focus,
+  &:hover {
+    background-color: $comment-more-point;
+  }
 }
 
 .light-button {
   background-color: $light-button;
   color: $dark-accent-color;
+
+  &:hover,
+  &:focus {
+    background-color: $light-button-hover;
+  }
 }
 
 .header__button {
@@ -230,6 +240,11 @@ body {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.312;
+}
+
+.header__button:focus,
+.header__button:hover {
+  background-color: $light-button-hover;
 }
 
 img {
@@ -314,6 +329,7 @@ img {
     max-width: 1170px;
     padding-left: 15px;
     padding-right: 15px;
+    padding-top: 6px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -610,6 +626,15 @@ img {
     line-height: 1.312px;
 
     color: $background-main;
+
+    &:not(:last-child) {
+      margin-right: 35px;
+    }
+
+    &:hover,
+    &:focus {
+      color: $dark-accent-color;
+    }
   }
 }
 
