@@ -178,9 +178,16 @@
   }
 }
 
+.button-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
 .light-button {
   background-color: $light-button;
   color: $dark-accent-color;
+  margin-right: 0;
 
   &:hover,
   &:focus {
