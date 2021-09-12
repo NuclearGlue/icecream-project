@@ -13,7 +13,7 @@
         <ul class="menu nav__site">
             <li class="header__item"><a href="index.html" class="link nav__link  current">Home</a></li>
             <li class="header__item"><a href="#customer-reviews" class="link nav__link">About us</a></li>
-            <li class="header__item"><a href="#how-it’s-made?" class="link nav__link  ">How it’s made?</a></li>
+            <li class="header__item"><a href="#how-it’s-made" class="link nav__link  ">How it’s made?</a></li>
             <li class="header__item"><a href="#gallery" class="link nav__link">Our products</a></li>
             <li class="header__item"><a href="#contact" class="link nav__link  ">Contact</a></li>
         </ul>
@@ -86,7 +86,27 @@
                     </svg>
                 </button>
     
-                <button class="header__button header__button--close">Buy now ></button>
+                <button class="header__button header__button--close hero-button" type="button" data-modal-open>Buy now 
+                    <svg class="vector-btn">
+                        <use href="./images/hero-header/spryte.svg#icon-Vector-1-2"></use>
+                    </svg>
+                </button>
+                <div class="backdrop is-hidden" data-modal>
+                    <div class="modal">
+                        <p></p>
+                        <button class="modal-close" data-modal-close>
+                
+                            <svg class="svg-close" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" width="24"
+                                height="24">
+                                <path fill-rule="evenodd"
+                                    d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                        </button>
+                
+                    </div>
+                </div>
+
     
                 
             </div>
@@ -114,7 +134,9 @@
             </svg>
         </button>
 
-        <button class="header__button header__button--open">Buy now ></button>
+        <button class="header__button header__button--open">Buy now <svg class="vector-btn">
+            <use href="./images/hero-header/spryte.svg#icon-Vector-1-2"></use>
+        </svg></button>
         
     
         <ul class="mobile-menu">
