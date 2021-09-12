@@ -1,0 +1,107 @@
+.reviews__item{
+    display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+  .reviews__reviewer-photo {
+        
+      img{
+        width: auto;
+        margin: 0px auto 30px;}
+  }
+  
+  .reviews__field {
+    text-align: center;
+    width: 100%;
+   margin-bottom: 30px;
+    background-color: #FAFAFA;
+    @media (min-width: 768px) {
+      max-width: 620px;
+      margin-bottom: 24px;
+    }
+    @media (min-width: 1280px) {
+      max-width: 926px;
+      margin-bottom: 15px;
+    }
+   
+   
+  }
+  
+  
+  .reviewes__gradient-box{
+    padding: 50px 50px 20px 50px;
+    @media (min-width: 768px) {
+      padding: 30px 38px;
+    }
+    @media (min-width: 1280px) {
+      padding: 32px 52px;
+    }
+  }
+  .reviews__text {
+    position: relative;
+    z-index: 1;
+  font-family: DM Sans;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 2.16em;
+  text-align: center;
+  letter-spacing: 0.04em;
+      background-repeat: no-repeat;
+      background-position: center bottom ;
+      background-size: 100% 101%;
+    background-image: repeating-linear-gradient( to bottom, transparent , transparent 28px, $border-color, $border-color 30px);
+  
+  }
+  
+  .reviews__reviewer-data{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+    &::before{
+      content: "• • •";
+      margin-bottom: 18px;
+      line-height: 10px;
+      font-size: 18px;
+      color: $comment-more-point;
+    }
+   }
+  
+  .reviews__pseudo{
+    position: relative;
+     margin-right: -4px;
+     
+    &::before {
+      position: absolute;
+      z-index: -1;
+      top: -22px;
+      left: -37px;
+      content: "";
+      width: 54px;
+      height: 40px;
+      background-image: url(/images/customer-reviews/before.svg);
+    }
+  }
+  
+  .reviews__slider{
+    width: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px auto;
+  }
+  .reviews__pagination{
+   width: 12px;
+   height: 12px;
+   border-radius: 50%;
+   background-color: $slider-point ;
+  }
+  .reviews__pagination--current{
+  width: 12px;
+  height: 12px;
+  border-radius: 0%;
+  background-color:transparent;
+  background-image: url(/images/customer-reviews/house.svg);
+  
+  }
+  
