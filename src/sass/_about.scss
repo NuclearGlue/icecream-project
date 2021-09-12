@@ -1,10 +1,5 @@
-.about {
-  padding-top: 60px;
-  padding-bottom: 0;
-  margin-left: auto;
-  margin-right: auto;
+.section {
   background-color: $background-accent;
-  text-align: center;
 
   @media screen and (max-width: 767px) {
     background-image: url(../images/about/about-bcg-mob@1x.png);
@@ -28,10 +23,6 @@
       background-repeat: no-repeat;
       background-size: contain;
     }
-  }
-  @media screen and (min-width: 768px) {
-    padding-top: 125px;
-    padding-bottom: 40px;
   }
 
   @media screen and (min-width: 1280px) {
@@ -58,6 +49,18 @@
       background-position: center center;
       background-size: contain;
     }
+  }
+}
+.about {
+  padding-top: 60px;
+  padding-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 125px;
+    padding-bottom: 40px;
   }
 }
 .about__wrapper {
