@@ -104,7 +104,7 @@ img {
   width: 100%;
   height: auto;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .menu-toggle {
@@ -148,7 +148,7 @@ img {
   color: #d41443;
 }
 
-.header__container {
+.hero__container {
   padding: 34px 37px;
 }
 

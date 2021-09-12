@@ -11,9 +11,14 @@
   top: 60px;
   left: 355px;
   display: flex;
-  padding: 0;
-  margin: 0;
+  width: 541px;
+  justify-content: space-between;
+
   z-index: 1;
+}
+
+.header__item > .nav__link {
+  padding: 0px;
 }
 
 @media (max-width: 1279px) {
@@ -23,7 +28,6 @@
 }
 
 .menu .link {
-  padding: 10px;
   color: inherit;
   text-decoration: none;
 }
@@ -133,7 +137,7 @@
   margin-top: 16px;
 }
 
-.header-button,
+.hero__button,
 .header__button {
   border-radius: 22px;
   border: transparent;
@@ -142,7 +146,7 @@
   background-color: $background-main;
 }
 
-.header-button {
+.hero__button {
   font-family: DM Sans;
   font-style: normal;
   font-weight: normal;
@@ -163,7 +167,7 @@
   }
 }
 
-.header__text {
+.hero__text {
   position: absolute;
   margin-top: 130px;
   z-index: 3;
@@ -230,7 +234,7 @@
 .vector-btn {
   width: 5px;
   height: 8px;
-  margin-left: 15px;
+  margin-left: 8px;
 }
 
 .text_1 {
@@ -269,7 +273,7 @@
   color: $dark-accent-color;
 }
 
-.header__container {
+.hero__container {
   padding-top: 6px;
   width: 100%;
 }
@@ -321,10 +325,9 @@
     margin-bottom: 30px;
   }
 
-  .number-16 {
-    display: none;
-  }
-
+  .box-description,
+  .text-number,
+  .number-16,
   .number-23 {
     display: none;
   }
@@ -366,6 +369,64 @@
     width: 768px;
   }
 
+  .text-16 {
+    position: absolute;
+    top: 96px;
+    right: 44px;
+
+    z-index: 1;
+  }
+
+  .text-23 {
+    position: absolute;
+    top: 152px;
+    right: 42px;
+
+    z-index: 1;
+  }
+
+  .description-16 {
+    position: absolute;
+    top: 128px;
+    right: 44px;
+  }
+
+  .description-23 {
+    position: absolute;
+    top: 184px;
+    right: 42px;
+  }
+
+  .text-number {
+    width: 33px;
+    height: 32px;
+
+    font-family: Titan One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 32px;
+
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+
+    color: $dark-accent-color;
+  }
+
+  .box-description {
+    width: 43px;
+    height: 10px;
+
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 8px;
+    line-height: 1.25;
+    text-align: right;
+
+    color: $background-main;
+  }
+
   .arrow-right {
     position: absolute;
     left: 154px;
@@ -390,7 +451,7 @@
     margin-right: auto;
   }
 
-  .header__container {
+  .hero__container {
     width: 100%;
     padding: 0px;
   }
@@ -450,7 +511,7 @@
     height: 322px;
   }
 
-  .header__text {
+  .hero__text {
     margin-top: 0;
     margin-left: 34px;
   }
@@ -460,8 +521,9 @@
     top: 94px;
     right: 34px;
 
-    width: 43px;
-    height: 45px;
+    width: 16px;
+    height: 16px;
+    z-index: 0;
   }
 
   .number-23 {
@@ -469,8 +531,8 @@
     top: 151px;
     right: 34px;
 
-    width: 52px;
-    height: 43px;
+    width: 16px;
+    height: 16px;
   }
 
   .girl {
@@ -506,6 +568,64 @@
     height: 665px;
   }
 
+  .text-16 {
+    position: absolute;
+    top: 160px;
+    right: 115px;
+
+    z-index: 1;
+  }
+
+  .text-23 {
+    position: absolute;
+    top: 251px;
+    right: 116px;
+
+    z-index: 1;
+  }
+
+  .description-16 {
+    position: absolute;
+    top: 215px;
+    right: 115px;
+  }
+
+  .description-23 {
+    position: absolute;
+    top: 306px;
+    right: 115px;
+  }
+
+  .text-number {
+    width: 54px;
+    height: 53px;
+
+    font-family: Titan One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 46px;
+    line-height: 53px;
+
+    text-align: right;
+    letter-spacing: 0.04em;
+
+    color: $dark-accent-color;
+  }
+
+  .box-description {
+    width: 74px;
+    height: 18px;
+
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.3;
+    text-align: right;
+
+    color: $background-main;
+  }
+
   .logo {
     margin-top: 37px;
     margin-left: 46px;
@@ -527,7 +647,7 @@
     height: 538px;
   }
 
-  .header__text {
+  .hero__text {
     margin-left: 115px;
   }
 
@@ -535,16 +655,16 @@
     top: 156px;
     right: 97px;
 
-    width: 72px;
-    height: 77px;
+    width: 30px;
+    height: 30px;
   }
 
   .number-23 {
     top: 248px;
     right: 97px;
 
-    width: 92px;
-    height: 76px;
+    width: 30px;
+    height: 30px;
   }
 
   .girl {
@@ -586,6 +706,15 @@
     line-height: 1.4;
   }
 
+  .header__button--close {
+    position: absolute;
+    width: 160px;
+    height: 44px;
+
+    top: 38px;
+    right: 115px;
+  }
+
   .arrow-right {
     left: 295px;
     bottom: 56px;
@@ -602,10 +731,6 @@
     line-height: 1.312px;
 
     color: $background-main;
-
-    &:not(:last-child) {
-      margin-right: 35px;
-    }
 
     &:hover,
     &:focus {
