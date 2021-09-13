@@ -1,7 +1,7 @@
 <div class="container">
-    <div>
+    <div class="products-container">
          <p class="products-container__text">100% NATURAL</p>
-         <h2  class="products-container__title">PRODUCTS</h2>
+         <h2 id="products" class="products-container__title">PRODUCTS</h2>
     </div>
     <div>
          <ul class="products__box">
@@ -10,22 +10,50 @@
                 <p class="products__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                     incididunt ut labore et. dolore magna
                     aliqua facilisis.</p>
-                <button type="button" class="products__button"></button>
+                 <button type="button" class="products__button" products-modal-open></button>
+                 <div class="backdroup is-hidden" products-modal>
+                     <div class="modal">
+                         <button type="button" class="modal__button" products-modal-close>
+                            <svg class="modal__close">
+                                <use href="./images/products/closebutton.svg"></use>
+                            </svg>
+                         </button>
+                    </div>
+                 </div>
             </li>
             <li class="products__item second">
                 <h3 class="products__title second">ICE COFFEE</h3>
                 <p class="products__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                     incididunt ut labore et. dolore magna
                     aliqua facilisis.</p>
-                <button type="button" class="products__button second"></button>
+                <button type="button" class="products__button second" productssecond-modal-open></button>
+                <div class="backdroup is-hidden" productssecond-modal>
+                    <div class="modal second">
+                        <button type="button" class="modal__button" productssecond-modal-close>
+                            <svg class="modal__close">
+                                <use href="./images/products/closebutton.svg"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
             </li>
             <li class="products__item third">
                 <h3 class="products__title third">MILKSHAKES</h3>
                 <p class="products__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                     incididunt ut labore et. dolore magna
                     aliqua facilisis.</p>
-                <button type="button" class="products__button third"></button>
+                <button type="button" class="products__button third" productsthird-modal-open></button>
+                <div class="backdroup is-hidden" productsthird-modal>
+                    <div class="modal third">
+                        <button type="button" class="modal__button" productsthird-modal-close>
+                            <svg class="modal__close">
+                                <use href="./images/products/closebutton.svg"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
             </li>
          </ul>
     </div>
+    <script src="./js/productsmodal.js"></script>
 </div>
