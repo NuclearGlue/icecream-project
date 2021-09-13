@@ -752,9 +752,13 @@
 
   opacity: 1;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+  }
 }
 
-.backdrop__hero.is-hidden {
+.backdrop__hero.is-hidden .modal {
   transform: translate(-50%, -50%) scale(0.9);
 }
 .modal {
