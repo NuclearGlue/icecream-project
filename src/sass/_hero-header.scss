@@ -142,7 +142,7 @@
   margin-top: 16px;
 }
 
-.hero__button,
+.link-btn,
 .header__button {
   border-radius: 22px;
   border: transparent;
@@ -151,7 +151,7 @@
   background-color: $background-main;
 }
 
-.hero__button {
+.link-btn {
   font-family: DM Sans;
   font-style: normal;
   font-weight: normal;
@@ -166,10 +166,6 @@
 
   background-color: $dark-button;
   color: $background-main;
-
-  &:last-child {
-    margin-right: 0px;
-  }
 }
 
 .hero__text {
@@ -670,6 +666,9 @@
 
     width: 30px;
     height: 30px;
+  }
+  .link-btn {
+    margin-right: 16px;
   }
 
   .girl {
