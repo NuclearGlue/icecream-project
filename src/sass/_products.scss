@@ -8,6 +8,15 @@
     flex-wrap: nowrap;
   }
 }
+.products-container {
+  margin-bottom: 150px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 180px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 250px;
+  }
+}
 .products-container__text {
   font-family: $secondary-font;
   font-size: 18px;
@@ -32,17 +41,14 @@
   text-align: center;
   letter-spacing: 0.04em;
   color: $dark-button;
-  margin-bottom: 150px;
   @media screen and (min-width: 768px) {
     font-size: 48px;
     line-height: 1.15;
-    margin-bottom: 180px;
   }
 
   @media screen and (min-width: 1280px) {
     font-size: 58px;
     line-height: 1.16;
-    margin-bottom: 250px;
   }
 }
 .products__item {
@@ -286,5 +292,74 @@
   }
   &.third {
     background-color: $section-color-3;
+  }
+}
+.backdroup {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.backdroup.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  background-color: $section-color-1;
+  @media screen and (max-width: 1279px) {
+    width: 450px;
+    height: 609px;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 528px;
+    height: 581px;
+  }
+  &.second {
+    background-color: $section-color-2;
+  }
+  &.third {
+    background-color: $section-color-3;
+  }
+}
+.modal__close {
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  width: 18px;
+  height: 18px;
+  fill: #212121;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal__button {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  padding: 15px;
+  background-color: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:focus,
+  &:hover {
+    background-color: white;
   }
 }
