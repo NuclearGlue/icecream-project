@@ -26,12 +26,12 @@ button {
 }
 
 section {
-  padding: 40px 20px;
+  padding: 40px 0;
   @media (min-width: 768px) {
-    padding: 60px 36px;
+    padding: 60px 0;
   }
   @media (min-width: 1280px) {
-    padding: 80px 115px;
+    padding: 80px 0;
   }
 }
 
@@ -41,12 +41,15 @@ section {
 
   @media (min-width: 480px) {
     width: 480px;
+    padding: 0 20px;
   }
   @media (min-width: 768px) {
     width: 768px;
+    padding: 0 36px;
   }
   @media (min-width: 1280px) {
     width: 1280px;
+    padding: 0 115px;
   }
 }
 
