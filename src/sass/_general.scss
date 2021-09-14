@@ -25,21 +25,29 @@ button {
   cursor: pointer;
 }
 
-.container {
+section {
   padding: 40px 20px;
+  @media (min-width: 768px) {
+    padding: 60px 36px;
+  }
+  @media (min-width: 1280px) {
+    padding: 80px 115px;
+  }
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+
   @media (min-width: 480px) {
     width: 480px;
   }
   @media (min-width: 768px) {
-    padding: 60px 36px;
     width: 768px;
   }
   @media (min-width: 1280px) {
-    padding: 80px 115px;
     width: 1280px;
   }
-  margin-left: auto;
-  margin-right: auto;
 }
 
 a {
