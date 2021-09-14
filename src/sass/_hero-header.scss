@@ -287,7 +287,7 @@
 
   .header__container {
     min-width: 320px;
-    max-width: 1170px;
+    // max-width: 1170px;
     padding-left: 15px;
     padding-right: 15px;
     padding-top: 6px;
@@ -742,6 +742,16 @@
   &:hover,
   &:focus {
     fill: $dark-button;
+  }
+}
+
+.svg-close-menu {
+  fill: $background-main;
+  background: transparent;
+
+  &:hover,
+  &:focus {
+    fill: $section-color-2;
   }
 }
 
