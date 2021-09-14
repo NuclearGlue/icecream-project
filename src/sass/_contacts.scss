@@ -97,7 +97,7 @@
 }
 
 .contacts__block {
-  padding-top: 25px;
+  margin-top: 25px;
   padding-bottom: 25px;
   border-bottom: 1px solid $border-color;
 
@@ -120,6 +120,10 @@
   text-align: center;
   padding-left: 24px;
   padding-right: 24px;
+
+  &--foodtruck {
+    background-color: $section-color-3;
+  }
 
   @media screen and (min-width: 768px) {
     font-size: 16px;
