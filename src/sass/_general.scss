@@ -25,15 +25,15 @@ button {
   cursor: pointer;
 }
 
-/* section {
-  padding: 40px 20px;
+section {
+  padding: 40px 0;
   @media (min-width: 768px) {
-    padding: 60px 36px;
+    padding: 60px 0;
   }
   @media (min-width: 1280px) {
-    padding: 80px 115px;
+    padding: 80px 0;
   }
-} */
+}
 
 .container {
   margin-left: auto;
@@ -42,15 +42,15 @@ button {
 
   @media (min-width: 480px) {
     width: 480px;
-    padding: 20px 0;
+    padding: 0 20px;
   }
   @media (min-width: 768px) {
     width: 768px;
-    padding: 36px 0;
+    padding: 0 36px;
   }
   @media (min-width: 1280px) {
     width: 1280px;
-    padding: 115px 0;
+    padding: 0 115px;
   }
 }
 
