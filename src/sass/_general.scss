@@ -21,18 +21,45 @@ ul {
   margin-bottom: 0;
   padding-left: 0;
 }
+button {
+  cursor: pointer;
+}
 
-.container {
-  padding: 0 20px;
+section {
+  padding: 40px 20px;
   @media (min-width: 768px) {
-    padding: 0 36px;
+    padding: 60px 36px;
   }
   @media (min-width: 1280px) {
-    padding: 0 115px;
+    padding: 80px 115px;
   }
 }
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+
+  @media (min-width: 480px) {
+    width: 480px;
+  }
+  @media (min-width: 768px) {
+    width: 768px;
+  }
+  @media (min-width: 1280px) {
+    width: 1280px;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
 .container--no-padding {
   padding: 0;
+}
+.is-hidden {
+  opacity: 0;
+  pointer-events: none;
 }
 
 .visualy-hidden {

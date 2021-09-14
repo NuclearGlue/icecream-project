@@ -1,0 +1,78 @@
+<section class="section section--about">
+    <div class="container about about--padding">
+        <div class="about__wrapper">
+        <p class="about__label">Tradition and love</p>
+        <h2 id="how-it’s-made" class="about__title">How IT's made?</h2>
+        </div>
+
+        <div class="about__full-box">
+        <picture class="about__image">
+            <source srcset=" 
+            ./images/about/about-desk@1x.png 1x, 
+            ./images/about/about-desk@2x.png 2x,
+            ./images/about/about-desk@3x.png 3x" 
+            type="image/png"
+                media="(min-width: 1280px)">
+            <source srcset=" 
+            ./images/about/about-tab@1x.png 1x, 
+            ./images/about/about-tab@2x.png 2x,
+            ./images/about/about-tab@3x.png 3x" 
+             type="image/png"
+                media="(min-width: 768px)">
+            <source srcset=" 
+            ./images/about/about-mob@1x.png 1x, 
+            ./images/about/about-mob@2x.png 2x,
+            ./images/about/about-mob@3x.png 3x" 
+            type="image/png"
+                media="(max-width: 767px)">
+            <img src="./images/about/about-tab@1x.png" alt="Cow, milk and promo" >
+        </picture>
+        <div class="about__box"> 
+        <ul class="about__list">
+            <li class="about__item"><p class="about__text">Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo cursus, faucibus lorem eget, egestas eros.
+            Maecenas eleifend erat at justo fringilla.</p></li>
+           
+            <li class="about__item"><p class="about__text about__text--lightcolor">Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum. Mauris rhoncus orci in imperdiet placerat.
+            Vestibulum euismod nisl suscipit ligula volutpat, a feugiat urna maximus. Cras massa nibh, tincidunt.
+            <br/>
+            <br/>
+            Aliquam erat volutpat. Aenean accumsan.
+        
+        </p></li>
+          
+        </ul>
+        <button about-modal-open type="button" class="about__button">Read more 
+            <svg class="about__icon" width="10" height="10">
+                <use href="./images/about/sprite.svg#icon-about-vector"></use>
+            </svg>
+    </button>
+        </div>
+        </div>
+    </div>
+
+   
+</section>
+<div class="about__backdrop is-hidden" about-modal>
+    <div class="about__modal">
+        <button about-modal-close class="about__close">
+            <svg class="about__icon--close" width="18" height="18">
+                <use href="./images/about/sprite.svg#icon-modal-close"></use>
+            </svg>
+        </button>
+        <h3 class="about__description">We know how to do it well</h3>
+            <iframe class="about__video" src="https://www.youtube.com/embed/SaSrHp2OMjM" title="YouTube video player"
+                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+
+                    <form class="about__form" autocomplete="off">
+                        <label class="about__field">
+                            <input class="about__input" type="email" name="mail-subscribe" placeholder="E-mail">
+                        </label>
+                        <button class="about__button" type="submit">Subscribe
+                        </button>
+                    </form>
+                    
+
+    </div>
+</div>
+
