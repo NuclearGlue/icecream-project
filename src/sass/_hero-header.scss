@@ -761,6 +761,9 @@
     opacity: 0;
     pointer-events: none;
   }
+  @media (max-width: 767px) {
+    display: none;
+  }
 }
 
 .backdrop__hero.is-hidden .modal-header {
@@ -909,7 +912,7 @@
   }
 
   @media screen and (max-width: 1279px) {
-    max-width: 370px;
+    min-width: 370px;
     height: 40px;
 
     &:hover,
@@ -972,7 +975,7 @@
   }
 
   @media screen and (max-width: 1279px) {
-    max-width: 370px;
+    min-width: 370px;
     height: 120px;
   }
 }
